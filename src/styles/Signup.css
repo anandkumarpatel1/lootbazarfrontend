@@ -1,0 +1,119 @@
+.signup-bg {
+  background: url("../assests/loginbg.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 80vh;
+}
+
+.my-signup {
+  display: flex;
+  justify-content: center;
+  height: 500px;
+  align-items: center;
+}
+
+.my-signup-form {
+  margin-top: 20rem;
+  text-align: center;
+  margin-bottom: 5rem;
+  height: 60vh;
+  border-radius: 10px 30px 10px 30px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  background: linear-gradient(to left, rgb(246, 246, 45) 0%, pink 50%);
+  animation-name: top;
+  animation-duration: 3s;
+  opacity: 0.85;
+}
+.my-signup-form p {
+    margin-top: 50px;
+  font-size: 25px;
+  font-weight: 700;
+}
+.my-signup-form input {
+  width: 60%;
+  margin-top: 15px;
+  border-radius: 15px;
+  padding: 15px 10px;
+  background: linear-gradient(to top, white 40%, rgb(252, 251, 251) 100%);
+  font-size: 20px;
+}
+.my-signup-form button {
+  width: 41%;
+  margin-top: 15px;
+  border-radius: 15px;
+  padding: 15px 10px;
+  font-size: 20px;
+  background: rgb(194, 124, 240);
+  /* background: linear-gradient(to left, #c84285 0%, #ffcf33 100%); */
+  transition: all 0.8s;
+}
+.my-signup-form button:hover {
+  /* background: linear-gradient(to right, #c84285 0%, #ffcf33 100%); */
+  background: rgb(245, 245, 114);
+}
+.my-signup-form .button2 {
+  width: 15%;
+  margin-top: 15px;
+  border-radius: 15px;
+  padding: 15px 10px;
+  font-size: 20px;
+  margin-left: 4%;
+}
+
+@media (max-width: 450px) {
+  .my-signup-form input {
+    width: 100%;
+  }
+  .my-signup-form {
+    margin: 0px 9px;
+    height: 10vh;
+  }
+  .my-signup-form button {
+    width: 66%;
+  }
+  .my-signup-form .button2 {
+    width: 30%;
+  }
+}
+
+@media (max-width: 1050px) {
+  .my-signup-form {
+    margin-top: 10vh;
+    height: 80vh;
+  }
+}
+@media (max-width: 800px) {
+  .my-signup-form {
+    margin-top: 20vh;
+    height: 55vh;
+  }
+}
+@media (max-width: 395px) {
+  .my-signup-form {
+    height: 60vh;
+  }
+}
+@media (max-width: 380px) {
+  .my-signup-form {
+    margin-top: 0vh;
+    height: 73vh;
+  }
+}
+@media (max-width: 360px) {
+  .my-signup-form {
+    margin-top:10vh;
+    height: 73vh;
+  }
+}
+
+@keyframes top {
+  from {
+    transform: translateY(-500px);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}

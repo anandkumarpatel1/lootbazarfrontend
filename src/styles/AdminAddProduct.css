@@ -1,0 +1,123 @@
+.add-product-bg {
+    background-image: url("../assests/loginbg.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    z-index: 1;
+  }
+  
+  .my-add-product {
+    display: flex;
+    justify-content: center;
+    height: 500px;
+    align-items: center;
+  }
+  
+  .my-add-product-form {
+    margin-top: 25rem;
+    text-align: center;
+    margin-bottom: 5rem;
+    height: 70vh;
+    width: 60vw;
+    border-radius: 10px 30px 10px 30px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+      rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    background: linear-gradient(to left, rgb(246, 246, 45) 0%, pink 50%);
+    animation-name: top;
+    animation-duration: 3s;
+    opacity: 0.85;
+    z-index: 2;
+  }
+  .my-add-product-form p {
+    margin-top: 6vh;
+    font-size: 25px;
+    font-weight: 700;
+  }
+  .my-add-product-form input {
+    width: 60%;
+    margin-top: 15px;
+    border-radius: 15px;
+    padding: 15px 10px;
+    background: linear-gradient(to top, white 40%, rgb(252, 251, 251) 100%);
+    font-size: 20px;
+  }
+  .my-add-product-form button {
+    width: 41%;
+    margin-top: 15px;
+    border-radius: 15px;
+    background: rgb(194, 124, 240);
+  
+    padding: 15px 10px;
+    font-size: 20px;
+    transition: all 0.8s;
+  }
+  .my-add-product-form button:hover {
+    background: rgb(245, 245, 114);
+  }
+  .my-add-product-form .button2 {
+    margin-top: 35px;
+    font-size: 20px;
+  }
+  .my-add-product-form .button2 .font-bold {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 450px) {
+    .my-add-product-form input {
+      width: 100%;
+    }
+    .my-add-product-form {
+      margin: 0px 9px;
+      height: 10vh;
+    }
+    .my-add-product-form button {
+      width: 66%;
+    }
+    .my-add-product-form .button2 {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 1050px) {
+    .my-add-product-form {
+      margin-top: 60vh;
+      height: 70vh;
+    }
+  }
+  @media (max-width: 850px) {
+    .my-add-product-form {
+      height: 60vh;
+    }
+  }
+  @media (max-width: 450px) {
+    .my-add-product-form {
+      height: 75vh;
+      width: 100vw;
+      margin-top: 20rem;
+    }
+  }
+  @media (max-width: 380px) {
+    .my-add-product-form {
+      margin-top: 10rem;
+      width: 100vw;
+      height: 90vh;
+    }
+  }
+  @media (max-width: 360px) {
+    .my-add-product-form {
+      margin-top: 13rem;
+      height: 90vh;
+    }
+  }
+  
+  @keyframes top {
+    from {
+      transform: translateY(-500px);
+    }
+  
+    to {
+      transform: translateY(0);
+    }
+  }
+  

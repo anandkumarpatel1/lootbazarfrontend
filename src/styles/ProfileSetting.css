@@ -1,0 +1,54 @@
+.my-profile-main {
+    display: flex;
+    justify-content: center;
+    /* background: linear-gradient(to right, #c84285 0%, #ffcf33 100%); */
+  }
+  .my-profile-main .my-user-info {
+    font-family: "Courgette", cursive;
+    font-size: 30px;
+    margin-top: 180px;
+    margin-bottom: 180px;
+    display: flex;
+    justify-content: center;
+  }
+  .my-profile-main .my-user-info .user-dynamic {
+    margin-left: 35px;
+  }
+  .my-profile-main .my-user-img {
+    margin-top: 20px;
+    margin-right: 30px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .my-profile-main .my-user-img img {
+    border-radius: 100%;
+  }
+  
+  @media (max-width: 1200px) {
+    .my-profile-main .my-user-img {
+      width: 40%;
+    }
+  }
+  @media (max-width: 900px) {
+    .my-profile-main .my-user-img {
+      width: 50%;
+    }
+  }
+  @media (max-width: 900px) {
+    .my-profile-main .my-user-img {
+      display: none;
+    }
+  }
+  @media (max-width: 600px) {
+      .my-profile-main .my-user-info {
+          font-family: "Courgette", cursive;
+          font-size: 5vw;
+          margin-top: 180px;
+          margin-bottom: 180px;
+          display: flex;
+          justify-content: center;
+        }
+  }
+  

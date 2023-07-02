@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+
+.anime-backgroud img {
+  width: 100%;
+}
+
+.letter {
+  display: flex;
+  position: absolute;
+  top: 47vh;
+  left: 72vw;
+}
+
+.letter p {
+  color: rgb(242, 241, 241);
+  font-weight: 600;
+  font-size: 25px;
+  height: 10vh;
+  justify-content: center;
+  text-align: center;
+}
+
+.letter .p-main {
+  display: block;
+}
+.typed {
+  display: flex;
+  position: absolute;
+  font-family: "Courgette", cursive;
+  top: 4rem;
+  font-size: 65px;
+  font-weight: bold;
+  height: 8vh;
+  top: 50vh;
+  left: 71vw;
+  justify-content: center;
+  color: orange;
+}
+
+.home-product-cont {
+  background: linear-gradient(
+    to right,
+    rgb(171, 170, 170) 0%,
+    rgb(253, 240, 240) 100%
+  );
+
+  padding-bottom: 50px;
+}
+.home-product-cont .home-list {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0px;
+  font-size: 30px;
+  font-weight: 700;
+  text-decoration-line: underline;
+}
+
+.home-card-cont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.home-card-cont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.home-card-cont .card {
+  border: 1px solid gray;
+  border-radius: 25px;
+  width: 15vmax;
+  margin: 20px;
+  transition: all 0.5s;
+}
+.home-card-cont .card:hover {
+  box-shadow: 0 0 5px rgba(15, 15, 15, 0.26);
+  transform: translateY(-1vmax);
+}
+.home-card-cont .card p {
+  margin-left: 10%;
+  font-size: 20px;
+  font-weight: 500;
+}
+.home-card-cont .card img {
+  border-radius: 25px;
+  height: 20vmax;
+  width: 100%;
+}
+@media (max-width: 1500px) {
+  .typed {
+    top: 40vh;
+  }
+  .letter {
+    top: 37vh;
+  }
+}
+@media (max-width: 900px) {
+  .typed {
+    top: 25vh;
+    font-size: 50px;
+  }
+  .letter {
+    top: 22vh;
+  }
+  .letter p {
+    font-size: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .anime-backgroud img {
+    width: 105%;
+  }
+  .typed {
+    display: none;
+  }
+  .letter {
+    display: none;
+  }
+  .home-card-cont .card {
+    width: 25vmax;
+    height: 40vmax;
+  }
+  .home-card-cont .card img{
+    height: 30vmax;
+  }
+}
+
+@media (max-width : 400px) {
+  .home-card-cont .card {
+    width: 30vmax;
+    height: 50vmax;
+  }
+  .home-card-cont .card img{
+    height: 40vmax;
+  }
+}

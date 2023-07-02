@@ -1,0 +1,101 @@
+.login-bg {
+  background-image: url("../assests/loginbg.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.my-login {
+  display: flex;
+  justify-content: center;
+  height: 500px;
+  align-items: center;
+}
+
+.my-login-form {
+  margin-top: 5rem;
+  text-align: center;
+  margin-bottom: 5rem;
+  height: 50vh;
+  border-radius: 10px 30px 10px 30px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  background: linear-gradient(to left, rgb(246, 246, 45) 0%, pink 50%);
+  animation-name: left;
+  opacity: 0.85;
+}
+.my-login-form p {
+  margin-top: 6vh;
+  font-size: 25px;
+  font-weight: 700;
+}
+.my-login-form input {
+  width: 60%;
+  margin-top: 15px;
+  border-radius: 15px;
+  padding: 15px 10px;
+  background: linear-gradient(to top, white 40%, rgb(252, 251, 251) 100%);
+  font-size: 20px;
+}
+.my-login-form button {
+  width: 41%;
+  margin-top: 15px;
+  border-radius: 15px;
+  background: white;
+  padding: 15px 10px;
+  font-size: 20px;
+  transition: all 0.2s;
+}
+.my-login-form button:hover {
+  font-weight: 700;
+  background: linear-gradient(to right, #c84285 0%, #ffcf33 100%);
+}
+.my-login-form .button2 {
+  margin-top: 35px;
+  font-size: 20px;
+}
+.my-login-form .button2 .font-bold {
+  text-decoration: underline;
+}
+
+@media (max-width: 450px) {
+  .my-login-form input {
+    width: 100%;
+  }
+  .my-login-form {
+    margin: 0px 9px;
+    height: 10vh;
+  }
+  .my-login-form button {
+    width: 66%;
+  }
+  .my-login-form .button2 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1050px) {
+  .my-login-form {
+    height: 70vh;
+  }
+}
+@media (max-width: 800px) {
+  .my-login-form {
+    height: 45vh;
+  }
+}
+@media (max-width: 400px) {
+  .my-login-form {
+    height: 58vh;
+  }
+}
+
+@keyframes left {
+  from {
+    transform: translateY(-1000px);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}

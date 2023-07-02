@@ -1,0 +1,48 @@
+section{
+    background: linear-gradient(
+        to right,
+        rgb(171, 170, 170) 0%,
+        rgb(253, 240, 240) 100%
+    )
+}
+.all-products-first{
+    display: flex;
+    justify-content: space-around;
+
+}
+.all-products-first p{
+
+    font-size: 35px;
+    font-weight: 600;
+    text-decoration: underline;
+    margin:50px 0px;
+}
+.all-products-first input{
+    background: rgb(200, 197, 190);
+    margin: 8px 0px;
+    width: 15vw;
+    border-radius: 25px;
+    padding: 10px;
+    margin:50px 0px;
+}
+.all-products-first input::placeholder {
+    font-weight: 500;
+    opacity: 0.9;
+    color: black;
+}
+
+.no-found{
+   height: 70vh;
+}
+
+@media (max-width : 600px) {
+    .all-products-first p{
+        font-size: 25px;
+    }
+    .all-products-first input{
+        width: 50vw;
+    }
+    .no-found{
+        height: 50vh;
+    }
+}
